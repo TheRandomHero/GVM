@@ -1,30 +1,25 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+    <div class="app">
+        <home-view />
+    </div>
 </template>
 
+<script lang="ts">
+import { defineComponent } from '@vue/runtime-core'
+import HomeView from './views/HomeView.vue'
+export default defineComponent({
+    name: 'App',
+    components: {
+        HomeView
+     }
+})
+
+</script>
 <style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.app{
+    display: flex;
+    justify-content: center;
+    width: 100%
 }
 </style>
