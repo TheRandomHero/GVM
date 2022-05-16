@@ -1,7 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # GVM
 GVM SPA
 =======
+=======
+# GVM
+GVM SPA
+>>>>>>> header
 # gvm_ecommercial_spa
 
 ## Project setup
