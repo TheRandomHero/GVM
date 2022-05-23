@@ -7,14 +7,27 @@
                 <a href="/">Gallery </a>
                 <a href="/">Contact </a>
                 <a href="/">Prices </a>
+                <h1>GVM</h1>
+                <a href="facebook">
+                    <img src="../assets/images/facebook.png" alt="facebook" height="25px">
+                </a>
+                <a href="insta">
+                    <img src="../assets/images/instagram.png" alt="insta" height="25px">
+                </a>
+                <a href="tiktok">
+                    <img src="../assets/images/tik-tok.png" alt="tiktok" height="25px">
+                </a>
             </nav>
         </header>
     </div>
     <div >
-        <img src="../assets/images/scissors_gimp_transparent_with_logo2.png" alt="header backgorund">
+        <img src="../assets/images/embroider_wallpapper.jpg" alt="header backgorund">
     </div>
-    <div>
-        <h1>Gépi varrás</h1>
+    <div class="title">
+        <h1>GVM</h1>
+        <h2>Gépi hímzés:</h2>
+        <h3>Cégeknek</h3>
+        <h3>Egyéni megrendlesére</h3>
     </div>
 </div>
 </template>
@@ -30,13 +43,15 @@ export default defineComponent({
 
 .image-container{
     display: inline-block;
-    width: 100vh;
+    width: 100%;
     height: 100%;
 }
 .navigation{
     display: flex;
     justify-content: space-around;
     width: 100%;
+    position: absolute;
+    z-index: 1;
 }
 
 img {
@@ -44,9 +59,9 @@ img {
     width: 100%;
 }
 
-h1 {
+.title {
     position: absolute;
     top: 13%;
-    left: 45%;
+    left: 15%;
 }
 </style>
