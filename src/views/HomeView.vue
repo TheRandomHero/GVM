@@ -1,14 +1,20 @@
 <template>
-  <my-header />
+  <div>
+    <Intro />
+    <Article />
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import  MyHeader  from '../components/MyHeader.vue'
+import  Intro  from '../components/Intro.vue';
+import Article from '@/components/Article.vue';
+
 export default defineComponent({
   name: 'HomeView',
   components: {
-    MyHeader,
+    Intro,
+    Article
   },
 });
 </script>
