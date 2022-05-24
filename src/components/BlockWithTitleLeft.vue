@@ -30,7 +30,7 @@ export default defineComponent({
 }
 
 .image-container{
-    width: 500px;
+    width: 600px;
     height: 650px;
 }
 
@@ -40,6 +40,6 @@ export default defineComponent({
 }
 
 .title-container{
-    width: 500px;
+    width: 400px;
 }
 </style>
