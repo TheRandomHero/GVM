@@ -21,7 +21,7 @@
         </header>
     </div>
     <div >
-        <img src="../assets/images/embroider_wallpapper.jpg" alt="header backgorund">
+        <img src="../assets/images/embroider_wallpapper2.jpg" alt="header backgorund">
     </div>
     <div class="title">
         <h1>GVM</h1>
