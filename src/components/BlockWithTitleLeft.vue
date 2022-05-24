@@ -1,17 +1,18 @@
 <template>
     <div class="inside-container">
-        <div class="title-container">
-            <h1>Cégeknek</h1>
-            <h2>Logók/minták nagy mennyiségben</h2>
-        </div>
         <div class="image-container">
-            <img src="../assets/images/company_logo.jpg" alt="company_logo">
+            <img src="../assets/images/unique_embroider.jpg" alt="company_logo">
+        </div>
+        <div class="title-container">
+            <h1>Magánszemélyeknek</h1>
+            <h2>Egyéni minták készítése/tervezése</h2>
         </div>
     </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+
 export default defineComponent({
     setup() {
 
@@ -29,7 +30,7 @@ export default defineComponent({
 }
 
 .image-container{
-    width: 600px;
+    width: 500px;
     height: 650px;
 }
 
@@ -39,6 +40,6 @@ export default defineComponent({
 }
 
 .title-container{
-    width: 400px;
+    width: 500px;
 }
 </style>

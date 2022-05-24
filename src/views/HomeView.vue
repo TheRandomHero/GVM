@@ -1,18 +1,17 @@
 <template>
     <block-with-title />
-    <Article />
+    <block-with-title-left />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 import  BlockWithTitle  from '../components/BlockWithTitle.vue';
-import Article from '@/components/Article.vue';
-
+import  BlockWithTitleLeft  from '../components/BlockWithTitleLeft.vue';
 export default defineComponent({
   name: 'HomeView',
   components: {
     BlockWithTitle,
-    Article
+    BlockWithTitleLeft
   },
 });
 </script>
