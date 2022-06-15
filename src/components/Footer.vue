@@ -1,12 +1,6 @@
 <template>
     <div class="my-footer">
         <div class="top-row">
-            <div class="logos">
-                <img src="../assets/images/SocialMediaWhiteIcons/facebook-60.png" alt="facebook">
-                <img src="../assets/images/SocialMediaWhiteIcons/instagram-60.png" alt="instagram">
-                <img src="../assets/images/SocialMediaWhiteIcons/tiktok-60.png" alt="tiktok">
-                <img src="../assets/images/SocialMediaWhiteIcons/twitter-60.png" alt="twittee">
-            </div>
             <div class="contact-wrapper">
                 <div class="map">
                     <a href="https://www.google.hu/maps/place/Dunaf%C3%B6ldv%C3%A1r,+Kossuth+Lajos+u.+46,+7020/@46.8105189,18.9038811,14z/data=!4m5!3m4!1s0x4742400bdeaf40b5:0x1b8b9b05c6e377c1!8m2!3d46.8106878!4d18.9216802">
@@ -21,6 +15,12 @@
                     <h2>Telefon</h2>
                     <h3>0670/123-45678</h3>
                 </div>
+            </div>
+            <div class="logos">
+                <p><a href="https://www.facebook.com"><img src="../assets/images/SocialMediaWhiteIcons/facebook-60.png" alt="facebook"></a></p>
+                <p><a href="https://www.instagram.com"><img src="../assets/images/SocialMediaWhiteIcons/instagram-60.png" alt="instagram"></a></p>
+                <p><a href="https://www.tiktok.com"><img src="../assets/images/SocialMediaWhiteIcons/tiktok-60.png" alt="tiktok"></a></p>
+                <p><a href="https://www.twitter.com"><img src="../assets/images/SocialMediaWhiteIcons/twitter-60.png" alt="twitter"></a></p>
             </div>
         </div>    
         <div class="bottom-row">
@@ -40,7 +40,7 @@ export default defineComponent({
 <style lang="less">
 
 .my-footer{
-    background-color: #262626;
+    background-color: #ffddca;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -56,7 +56,6 @@ export default defineComponent({
 
 .bottom-row{
     width: 100%;
-    color: whitesmoke;
     text-align: center;
 }
 
@@ -72,12 +71,15 @@ export default defineComponent({
     display: flex;
 }
 .contact{
-    color: whitesmoke;
     padding: 25px 100px
 }
 
 .logos{
     display: flex;
     align-items: center;
+}
+
+.logos img{
+    margin: 0px 35px
 }
 </style>
