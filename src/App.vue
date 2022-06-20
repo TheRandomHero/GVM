@@ -2,6 +2,7 @@
     <div class="app">
         <my-header />
         <home-view />
+        <homescreen-gallery />
         <my-footer />
     </div>
 </template>
@@ -11,13 +12,20 @@ import { defineComponent } from '@vue/runtime-core'
 import HomeView from './views/HomeView.vue'
 import MyHeader from './components/MyHeader.vue'
 import MyFooter from './components/Footer.vue'
+import HomescreenGallery from './components/HomescreenGallery.vue'
 export default defineComponent({
     name: 'App',
     components: {
         HomeView,
         MyHeader,
-        MyFooter
-     }
+        MyFooter,
+        HomescreenGallery
+    },
+    data(){
+        return{
+            images:[]
+        }
+    }
 })
 
 </script>
