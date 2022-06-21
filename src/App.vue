@@ -1,25 +1,21 @@
 <template>
     <div class="app">
         <my-header />
-        <home-view />
-        <homescreen-gallery />
+        <router-view/>
         <my-footer />
     </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from '@vue/runtime-core'
-import HomeView from './views/HomeView.vue'
 import MyHeader from './components/MyHeader.vue'
 import MyFooter from './components/Footer.vue'
-import HomescreenGallery from './components/HomescreenGallery.vue'
+
 export default defineComponent({
     name: 'App',
     components: {
-        HomeView,
         MyHeader,
         MyFooter,
-        HomescreenGallery
     },
     data(){
         return{
@@ -38,5 +34,9 @@ export default defineComponent({
     justify-content: center;
     align-items: center;
     flex-direction: column; 
+}
+
+body{
+    margin: 0px;
 }
 </style>

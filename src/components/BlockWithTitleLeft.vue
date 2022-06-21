@@ -27,6 +27,7 @@ export default defineComponent({
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 30px 0px;
 }
 
 .image-container{
@@ -41,5 +42,6 @@ export default defineComponent({
 
 .title-container{
     width: 400px;
+    text-align: center;
 }
 </style>

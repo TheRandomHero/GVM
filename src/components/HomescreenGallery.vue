@@ -4,7 +4,9 @@
             <img :src="url" :alt="url">
         </div>
         <div class="button">
-            <button>Go to gallery</button>
+            <router-link :to="{name:'gallery'}">
+                <button>Go to gallery</button>
+            </router-link>
         </div>
     </div>
 </template>
@@ -17,6 +19,11 @@ export default defineComponent({
     data(){
         return{
             images:[],
+        }
+    },
+    methods:{
+        toGallery(){
+            this.$router.push({ path:'/gallery'});
         }
     },
     mounted(){
@@ -43,7 +50,6 @@ export default defineComponent({
 }
 
 .image-card img{
-    
     max-height: 200px;
     max-width: 200px;
 }

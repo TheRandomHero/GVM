@@ -20,7 +20,7 @@
             </nav>
         </header>
     </div>
-    <div >
+    <div>
         <img src="../assets/images/embroider_wallpapper2.jpg" alt="header backgorund">
     </div>
     <div class="title">
