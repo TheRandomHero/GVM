@@ -1,5 +1,8 @@
 <template>
-    <div class="image-container">
+    <div class="header-background">
+        <img src="../assets/images/colorful_threads.jpg" alt="header backgorund">
+    </div>
+    <div class="gallery-container">
         <div v-for="(url,index) in images" :key="index" class="image-card">
             <img :src="url" alt="url" @click="show(index)">
         </div>
@@ -49,11 +52,12 @@ export default defineComponent({
 </script>
 <style lang="less">
 
-.image-container{
+.gallery-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 10% 15%;
 }
 .image-card img{
     max-height: 250px;
@@ -61,4 +65,13 @@ export default defineComponent({
     padding: 10px;
 }
 
+.header-background{
+    width: 100%;
+    max-height: 700px;
+    overflow: hidden;
+}
+
+.header-background img{
+    width: 100%;
+}
 </style>

@@ -1,4 +1,13 @@
 <template>
+    <div class="header-background">
+        <img src="../assets/images/embroider_wallpapper2.jpg" alt="header backgorund">
+    </div>
+    <div class="title">
+        <h1>GVM</h1>
+        <h2>Gépi hímzés:</h2>
+        <h3>Cégeknek</h3>
+        <h3>Egyéni megrendlesére</h3>
+    </div>
     <div class="inside-container">
         <div class="title-container">
             <h1>Cégeknek</h1>
@@ -20,6 +29,13 @@ export default defineComponent({
 </script>
 <style lang="less" scoped>
 
+.header-background{
+    width: 100%;
+}
+
+.header-background img{
+    width: 100%;
+}
 .inside-container{
     display: flex;
     flex-wrap: wrap;
@@ -42,5 +58,12 @@ export default defineComponent({
 .title-container{
     width: 400px;
     text-align: center;
+}
+
+
+.title {
+    position: absolute;
+    top: 13%;
+    left: 15%;
 }
 </style>
