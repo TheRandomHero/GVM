@@ -38,7 +38,7 @@ export default defineComponent({
 }
 .inside-container{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     width: 100%;
