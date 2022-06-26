@@ -4,9 +4,8 @@
             <h1>Tekintse meg galériánkat</h1>
         </div>
         <div class="button">
-            <router-link :to="{name:'gallery'}">
+            <router-link :to="{name:'gallery'}" />
                 <button>Go to gallery</button>
-            </router-link>
         </div>
     </div>
 </template>
