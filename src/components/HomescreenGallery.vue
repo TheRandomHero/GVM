@@ -1,7 +1,7 @@
 <template>
     <div class="container">
-        <div v-for="(url,index) in images" :key="index" class="image-card">
-            <img :src="url" :alt="url">
+        <div class="gallery-title">
+            <h1>Tekintse meg galériánkat</h1>
         </div>
         <div class="button">
             <router-link :to="{name:'gallery'}">
@@ -42,7 +42,7 @@ export default defineComponent({
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    text-align: center;
 }
 
 .image-card{
@@ -55,6 +55,10 @@ export default defineComponent({
 }
 
 .button{
+    flex-basis: 100%;
+}
+
+.gallery-title{
     flex-basis: 100%;
 }
 </style>
