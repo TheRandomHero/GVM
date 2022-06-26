@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="homegallery-container">
         <div class="gallery-title">
             <h1>Tekintse meg galériánkat</h1>
         </div>
@@ -38,11 +38,12 @@ export default defineComponent({
 })
 </script>
 <style lang="less" scoped>
-.container{
+.homegallery-container{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
+    padding: 50px 0px
 }
 
 .image-card{

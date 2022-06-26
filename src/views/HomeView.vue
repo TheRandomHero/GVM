@@ -1,6 +1,7 @@
 <template>
     <block-with-title />
     <block-with-title-left />
+    <process-cards/>
     <homescreen-gallery />
 </template>
 
@@ -9,12 +10,14 @@ import { defineComponent } from 'vue';
 import  BlockWithTitle  from '../components/BlockWithTitle.vue';
 import  BlockWithTitleLeft  from '../components/BlockWithTitleLeft.vue';
 import HomescreenGallery from '../components/HomescreenGallery.vue';
+import ProcessCards from '@/components/ProcessCards.vue';
 export default defineComponent({
   name: 'HomeView',
   components: {
     BlockWithTitle,
     BlockWithTitleLeft,
-    HomescreenGallery
+    HomescreenGallery,
+    ProcessCards,
   },
 });
 </script>

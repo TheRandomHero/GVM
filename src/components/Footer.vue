@@ -16,11 +16,16 @@
                     <h3>0670/123-45678</h3>
                 </div>
             </div>
-            <div class="logos">
-                <p><a href="https://www.facebook.com"><img src="../assets/images/SocialMediaWhiteIcons/facebook-60.png" alt="facebook"></a></p>
-                <p><a href="https://www.instagram.com"><img src="../assets/images/SocialMediaWhiteIcons/instagram-60.png" alt="instagram"></a></p>
-                <p><a href="https://www.tiktok.com"><img src="../assets/images/SocialMediaWhiteIcons/tiktok-60.png" alt="tiktok"></a></p>
-                <p><a href="https://www.twitter.com"><img src="../assets/images/SocialMediaWhiteIcons/twitter-60.png" alt="twitter"></a></p>
+            <div class="social-icons">
+                <div class="follow-us">
+                    <p>Kövess minket</p>
+                </div>
+                <div class="icons">
+                    <p><a href="https://www.facebook.com"><img src="../assets/images/SocialMediaWhiteIcons/facebook-60.png" alt="facebook"></a></p>
+                    <p><a href="https://www.instagram.com"><img src="../assets/images/SocialMediaWhiteIcons/instagram-60.png" alt="instagram"></a></p>
+                    <p><a href="https://www.tiktok.com"><img src="../assets/images/SocialMediaWhiteIcons/tiktok-60.png" alt="tiktok"></a></p>
+                    <p><a href="https://www.twitter.com"><img src="../assets/images/SocialMediaWhiteIcons/twitter-60.png" alt="twitter"></a></p>
+                </div>
             </div>
         </div>    
         <div class="bottom-row">
@@ -74,12 +79,24 @@ export default defineComponent({
     padding: 25px 100px
 }
 
-.logos{
+.social-icons{
     display: flex;
     align-items: center;
+    flex-flow: column;
+    justify-content: center;
 }
 
-.logos img{
+.social-icons img{
     margin: 0px 35px
 }
+
+.icons{
+    display:flex;
+}
+
+.follow-us{
+    font-size: 50px;
+    text-align: center;
+}
+
 </style>
