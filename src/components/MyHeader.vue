@@ -7,6 +7,7 @@
                 <div class="navigation-container">
                     <a href="/">About us </a>
                     <router-link to="/gallery">Gallery</router-link>
+                    <router-link to="/gyik">GYIK</router-link>
                     <a href="/">Contact </a>
                     <a href="/">Prices </a>
                 </div>
